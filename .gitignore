@@ -10,6 +10,29 @@
 *.fot
 *.cb
 *.cb2
+*.glo
+*.idx
+*.ist
+*.acr
+*.alg
+*.bbl
+*.blg
+*.dvi
+*.glg
+*.gls
+*.ilg
+*.ind
+*.lof
+*.maf
+*.mtc
+*.mtc1
+*.nav
+*.snm
+*.vrb
+*.out
+*.synctex.gz
+*.fdb_latexmk
+*.fls
 
 ## Intermediate documents:
 *.dvi
