@@ -1,0 +1,63 @@
+\documentclass[
+	ngerman,
+	11pt,
+	twoside,
+	a4paper,
+	BCOR8.25mm,
+	DIV10,
+	headsepline,
+	footsepline
+]{scrbook}
+\include{commands}
+
+\begin{document}
+
+\selectlanguage{ngerman}
+\frontmatter
+
+
+%---------------------------------------------------------------------------
+% Frontpage
+%---------------------------------------------------------------------------
+	\input{0-titlepage.tex}
+
+%---------------------------------------------------------------------------
+% Inhaltsverzeichnis
+%---------------------------------------------------------------------------
+	\tableofcontents
+	\cleardoublepage
+
+%---------------------------------------------------------------------------
+% Der eigentliche Inhalt
+%---------------------------------------------------------------------------
+	\mainmatter
+	\pagestyle{fancy}
+	
+	\include{1-einleitung} 	
+
+    \include{2-kapitel-2}
+    
+    \include{3-kapitel-3}
+    
+    \include{4-kapitel-4}
+    
+	\include{5-zusammenfassung}
+
+%---------------------------------------------------------------------------
+% Anhang
+%---------------------------------------------------------------------------
+	\appendix
+
+		\listoffigures
+		
+		%---------------------------------------------------------------------------
+
+    %using: \abk{Abk.}{Abkürzung}
+		\printnomenclature
+
+		\bibliographystyle{acm}
+		\bibliography{bibliography}
+
+    \printindex
+
+\end{document}

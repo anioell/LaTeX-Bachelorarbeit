@@ -1,0 +1,185 @@
+%---------------------------------------------------------------------------
+% Frontpage
+%---------------------------------------------------------------------------
+
+% Die Richtline zum Aufbau des Deckblatts von Bachelor- und Masterarbeiten
+% findet sich hier:
+% @see: http://www.uni-luebeck.de/fileadmin/uzl_ssc/PDF-Dateien/Richtlinie-Deckblatt-MINT-Abschlussarbeit-2012-10-18.pdf
+
+\newcommand{\titlepageskip}{\vskip 20pt}
+
+% @see: http://tex.stackexchange.com/questions/31705/different-margins-for-title-page
+\newgeometry{top=1in,bottom=1in,right=1in,left=1.2in}
+\begin{titlepage}
+
+\title{Prokrastination}
+\author{Anika Oellerich}
+
+{\Large
+	% 1. Offizielles Logo des Instituts, an dem die Arbeit angesiedelt ist. (Das offizielle Logo
+	% enthält das Siegel der Universität zusammen mit dem Text "Universität zu Lübeck"
+	% und darunter den Namen des Instituts.) Dieses Logo ist bei den Instituten zu
+	% bekommen. Das Logo muss oben links platziert werden.
+	\includegraphics[width=80mm]{Logo_Inst_Telematik_cropped}
+	\vskip 44pt
+
+	% 2. Optional: Noch einmal Name des Instituts und Angabe der Direktorin oder des
+	% Direktors des Instituts.
+
+	% 3. Titel der Arbeit in deutscher Sprache und ebenfalls in englischer Sprache. Dabei soll
+	% die Sprache, in der die Arbeit verfasst wurde, als erste angeführt werden; die andere
+	% Sprache kann weniger prominent dargestellt werden.
+	% Auch bei englischsprachigen Studiengängen sollen die Titelblätter auf Deutsch sein.
+	{\LARGE\bf Prokrastination\par}
+	{\LARGE Procrastination\par}
+
+	\titlepageskip
+	% 4. Der Text "Bachelorarbeit" oder "Masterarbeit" (nicht "Bachelor-Arbeit" oder "Master-Arbeit").
+	{\bf Bachelorarbeit}
+	%{\bf Masterarbeit}
+
+	\titlepageskip
+	%5. Der Text "im Rahmen des Studiengangs"
+	im Rahmen des Moduls\\
+	%6. Der ausgeschriebene Name des Studiengangs (also beispielsweise "Informatik"
+	%oder "Molecular Life Science", hingegen nicht "Bioinformatik" oder "MLS")
+	{\bf Werkzeuge für das wissenschaftliche Arbeiten – CS2450}\\
+	%7. Der Text "der Universität zu Lübeck"
+	der Universit"at zu L"ubeck
+
+	\titlepageskip
+	%8. Der Text "Vorgelegt von" und der Name der Studentin oder des Studenten
+	vorgelegt von\\
+	{\bf Maurice Grefe}\\
+	{\bf Anika Oellerich}
+
+	\titlepageskip
+	%9. Der Text "Ausgegeben und betreut von"
+	ausgegeben und betreut von\\
+	%10. Der Name der ersten Prüferin oder des ersten Prüfers. Dies ist immer gleichzeitig
+	%die Betreuerin oder der Betreuer im Sinne der Prüfungsordnung.
+	{\bf Prof.~Dr.~Max~Mustermann}
+
+	% Diesen Teil entfernen, wenn die Arbeit KEINEN Unterstützer hatte
+	\titlepageskip
+	{
+		%11. Optional der Text "Mit Unterstützung von" und der Name von weiteren Personen,
+		%die die Betreuung besonders unterstützt haben. Beispielsweise können dies
+		%wissenschaftliche Mitarbeiter sein oder Mitarbeiter von Firmen, wenn die Arbeit
+		%extern geschrieben wurde.
+		mit Unterstützung von\\
+		{\bf Prof.~Dr.~X~Musterfrau}\\
+		{\bf Dipl.-Inf.~Y~Mustermann}\\
+	}
+
+	% Diesen Teil entfernen, wenn die Arbeit NICHT in einer Firma entstanden ist
+	\titlepageskip
+	{
+		%12. Optional ein Hinweis, dass die Arbeit zum Teil bei einer Firma entstanden ist wie
+		%"Die Bachelorarbeit ist im Rahmen von Arbeiten bei Firma XY entstanden".
+		%Die Arbeit ist im Rahmen einer Tätigkeit bei der Firma Muster GmbH entstanden.
+	}
+
+	\vfill 
+	%13. Der Text "Lübeck, den" und das Abgabedatum.
+	{
+		Lübeck, den \today
+	}
+
+	% Diesen Teil entfernen, wenn "Im Focus das Leben" nicht drauf stehen soll
+	%14. Optional der Text "Im Focus das Leben".
+	{
+		\titlepageskip
+		Im Focus das Leben
+	}
+}
+\end{titlepage}
+\restoregeometry
+
+\cleardoublepage
+
+% Erklaerung
+\begin{comment}
+\newpage
+\vspace*{7cm}
+\centerline{\bf Erkl"arung}
+
+\vspace*{1cm}
+Ich versichere an Eides statt, die vorliegende Arbeit selbstst"andig und nur unter Benutzung
+der angegebenen Hilfsmittel angefertigt zu haben.
+
+\vspace*{3cm}
+Lübeck, den \today 
+
+\pagestyle{headings}
+
+\cleardoublepage
+\end{comment}
+% Kurzfassung und Abstract
+
+\section*{Kurzfassung}
+
+Prokrastination (lateinisch procrastinare „vertagen“; Zusammensetzung aus pro „für“ und cras „morgen“),
+auch extremes Aufschieben, ist eine Arbeitsstörung, die durch ein nicht nötiges Vertagen des Arbeitsbeginns 
+oder auch durch sehr häufiges Unterbrechen des Arbeitens gekennzeichnet ist, sodass ein Fertigstellen der 
+Aufgabe gar nicht oder nur unter enormem Druck zustande kommt. Dies geht fast immer mit einem beträchtlichen 
+Leidensdruck einher. Pathologisches Aufschieben muss unterschieden werden vom alltäglichen Aufschieben bei
+aversiven Aufgaben, das viele Menschen kennen (nur 1,5\% einer studentischen Population berichteten, gar 
+nicht aufzuschieben), dem Vertagen von Aufgaben aufgrund anderer, nötiger Prioritätensetzung, sowie einem 
+erfolgreichen Arbeiten kurz vor einer Frist, wodurch es weder zu Leistungseinbußen noch zu subjektivem Leiden 
+kommt. Während umgangssprachlich häufig vom „Studentensyndrom“ gesprochen wird, handelt es sich bei 
+Prokrastination um eine in der Gesamtpopulation vorkommende Arbeitsstörung, die besonders bei Personen 
+zutage tritt, die hauptsächlich selbstgesteuert arbeiten müssen (z. B. Studenten, Anwälte, Journalisten,
+Lehrer). Betroffene leiden meist dauerhaft darunter, berichten teilweise bereits zu Schulzeiten Probleme 
+gehabt zu haben und erleben dies auch in ihrem späteren Berufs- und Privatleben.
+
+Das Gegenteil der Prokrastination ist die Präkrastination\cite{kuenzel:2014}.
+
+%
+\vskip 3cm
+%
+
+\section*{Abstract}
+
+Procrastination is the avoidance of doing a task that needs to be accomplished\cite{9781111987251}. It 
+is the practice of doing more pleasurable things in place of less pleasurable ones, or carrying out less 
+urgent tasks instead of more urgent ones, thus putting off impending tasks to a later time. Sometimes, 
+procrastination takes place until the "last minute" before a deadline. Procrastination can take hold on
+any aspect of life — putting off cleaning the stove, repairing a leaky roof, seeing a doctor or dentist,
+submitting a job report or academic assignment or broaching a stressful issue with a partner. 
+Procrastination can lead to feelings of guilt, inadequacy, depression and self-doubt.
+
+
+
+\cleardoublepage
+
+% Aufgabenstellung
+
+\section*{Aufgabenstellung}
+
+Suchen Sie sich einen interessanten und nicht zu langen Wikipedia-Artikel und verwandeln Sie diesen in 
+eine von Ihnen verfasste fiktive Bachelorarbeit. Setzen Sie diese Arbeit mit LaTeX. Ihr Arbeit muss 
+dabei mindestens
+
+\begin{itemize}
+    \item ein Deckblatt,
+    \item ein Inhaltsverzeichnis,
+    \item eine deutsche und englische Kurzfassung,
+    \item eine Einleitung, eine Zusammenfassung und zwei weitere Kapitel,
+    \item zwei Abbildungen mit Bildunterschrift und
+    \item ein Literaturverzeichnis
+\end{itemize}
+
+enthalten.
+
+Das Literaturverzeichnis muss mindestens
+
+\begin{itemize}
+    \item ein Beitrag in einer Zeitschrift
+    \item ein Buch und
+    \item einen Beitrag im Berichtsband einer Konferenz
+\end{itemize}
+
+enthalten.
+
+Erzeugen Sie ein Git-Repository, das den Quelltext und alle notwenigen Dateien zum Übersetzen des Quelltextes enthält. Das Repository darf weder die generierte PDF-Datei noch temporäre LaTeX-Dateien enthalten. Nutzen Sie dazu eine \texttt{.gitignore}-Datei. Veröffentlichen Sie dieses Repository auf Ihrem GitHub-Account. Bearbeiten Sie diese Aufgabe zu zweit. Geben Sie hier Ihre beiden Namen und den Link zum Repository an. (Ihre Namen müssen in der Arbeit selber nicht zwingend angegeben werden.)
